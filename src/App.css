@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant");
+
+html {
+  background-image: url("4k-wallpaper-clouds-cloudy-1183099.jpg");
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.nav {
+  margin: 10px 0px 0px 10px;
+  font-family: 'Cormorant';
+  min-height: 120px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  z-index: 2;
+  position: fixed;
+}
+
+.welcometext {
+  position: absolute;
+  top: 45%;
+  margin-left: 50%;
+  left: -371px;
+  font-family: 'Cormorant';
+  font-size: 60px;
+  color: white;
+  z-index: 1;
+  width: 742px;
+  display: flex;
+  justify-content: center;
+}
+
+.work-element {
+  font-family: 'Cormorant';
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.work-container {
+  position: absolute;
+  margin: auto;
+  width: 80%;
+  padding-left: 5em;
+  padding-right: 5em;
+  top: 42%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.work-element img {
+  max-width: 250px;
+  box-shadow: 6px 6px 8px black;
+}
