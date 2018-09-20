@@ -12,6 +12,7 @@ html {
   font-family: 'Cormorant';
   min-height: 120px;
   font-size: 20px;
+  text-shadow: 2px 2px black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,18 +21,36 @@ html {
   position: fixed;
 }
 
+.title-ul {
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px black;
+}
+
+.title-main {
+  text-shadow: 2px 2px black;
+  margin-bottom: 5px;
+}
+
 .welcometext {
+  text-shadow: 2px 2px black;
   position: absolute;
   top: 45%;
   margin-left: 50%;
-  left: -371px;
+  left: -400px;
   font-family: 'Cormorant';
-  font-size: 60px;
+  font-size: 50px;
   color: white;
   z-index: 1;
-  width: 742px;
+  width: 800px;
   display: flex;
   justify-content: center;
+}
+
+.tools {
+  text-shadow: 2px 2px black;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-element {
@@ -43,16 +62,34 @@ html {
 
 .work-container {
   position: absolute;
+  z-index: 2;
   margin: auto;
   width: 80%;
   padding-left: 5em;
   padding-right: 5em;
-  top: 42%;
+  top: 30%;
   display: flex;
   justify-content: space-around;
 }
 
 .work-element img {
   max-width: 250px;
+  min-height: 140px;
   box-shadow: 6px 6px 8px black;
+}
+
+.github-link {
+  position: absolute;
+  z-index: 2;
+  top: 85%;
+  left: 46%;
+}
+
+.github-link img {
+  z-index: 2;
+  max-width: 5em;
+}
+
+.github-link img:hover {
+  cursor: pointer
 }
