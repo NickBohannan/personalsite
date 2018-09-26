@@ -10,7 +10,38 @@ html {
 .about-container {
   position: absolute;
   top: 50%;
-  left: 50%
+  margin-top: -300px;
+  left: 50%;
+  margin-left: -350px;
+  z-index: 3;
+  font-family: 'Cormorant';
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.ed-container {
+  position: absolute;
+  top: 50%;
+  margin-top: -200px;
+  left: 50%;
+  margin-left: -305px;
+  z-index: 3;
+  font-family: 'Cormorant';
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.res-bold-ul {
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;  
+}
+
+.res-ital {
+  font-style: italic;
 }
 
 .contact-container {
@@ -34,7 +65,7 @@ html {
   margin: 10px 0px 0px 10px;
   font-family: 'Cormorant';
   min-height: 120px;
-  font-size: 20px;
+  font-size: 16px;
   text-shadow: 2px 2px black;
   display: flex;
   flex-direction: column;
@@ -42,6 +73,10 @@ html {
   color: white;
   z-index: 2;
   position: fixed;
+}
+
+.nav a:hover {
+  cursor: pointer;
 }
 
 .title-ul {
@@ -67,9 +102,8 @@ html {
   font-size: 2.5em;
   color: white;
   z-index: 1;
+  text-align: center;
   width: 800px;
-  display: flex;
-  justify-content: center;
 }
 
 .tools {
@@ -84,6 +118,22 @@ html {
   color: white;
   font-size: 20px;
   text-align: center;
+}
+
+.res-bold-ul {
+  
+}
+
+.res-bold {
+
+}
+
+.res-ital {
+
+}
+
+.res {
+
 }
 
 .description {

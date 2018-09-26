@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Home, Work, About, Contact } from './index.js'
+import { Home, Work, About, Contact, Education } from './index.js'
 
 class App extends Component {
   constructor(props) {
@@ -10,6 +10,7 @@ class App extends Component {
     }
     this.renderHome = this.renderHome.bind(this)
     this.renderWork = this.renderWork.bind(this)
+    this.renderEd = this.renderEd.bind(this)
     this.renderAbout = this.renderAbout.bind(this)
     this.renderContact = this.renderContact.bind(this)
     this.githubLink = this.githubLink.bind(this)
@@ -21,6 +22,10 @@ class App extends Component {
 
   githubLink() {
     window.open("https://www.github.com/NickBohannan")
+  }
+
+  renderEd() {
+    this.setState({ display: Education })
   }
 
   renderHome() {
@@ -48,10 +53,11 @@ class App extends Component {
         <body>
           <div className="App">
             <div className="nav">
-              <div id="home" onClick={this.renderHome}>home</div>
-              <div id="work" onClick={this.renderWork}>work</div>
-              <div id="about" onClick={this.renderAbout}>about</div>
-              <div id="contact" onClick={this.renderContact}>contact</div>
+              <a onClick={this.renderHome}>home</a>
+              <a onClick={this.renderWork}>portfolio</a>
+              <a onClick={this.renderAbout}>professional experience</a>
+              <a onClick={this.renderEd}>education</a>
+              <a onClick={this.renderContact}>contact</a>
             </div>
             <this.state.display />
             <div className="github-link-container">
