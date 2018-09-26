@@ -7,6 +7,29 @@ html {
   min-height: 100%;
 }
 
+.about-container {
+  position: absolute;
+  top: 50%;
+  left: 50%
+}
+
+.contact-container {
+  position: absolute;
+  top: 46%;
+  margin-left: 50%;
+  left: -115px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Cormorant';
+  color: white;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.contact-element {
+  text-align: center;
+}
+
 .nav {
   margin: 10px 0px 0px 10px;
   font-family: 'Cormorant';
