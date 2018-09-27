@@ -17,12 +17,12 @@ class Work extends Component {
     render() {
         return (
             <div>
-                <div className="work-wrapper">
+                <div id="work-wrapper">
                     <div className="work-container">
                         <WorkEntry
                             name="Houndstooth Woodwerk"
                             image={require('./houndstooth.png')}
-                            link="http://houndstoothww.herokuapp.com"
+                            link="https://houndstoothfe.herokuapp.com"
                             description="Dynamic web presence for carpentry business"
                             tools1="Node.js"
                             tools2="Express"
@@ -32,7 +32,7 @@ class Work extends Component {
                         <WorkEntry
                             name="Compendium of Ghara"
                             image={require('./ghara.png')}
-                            link="http://compendiumofghara.herokuapp.com"
+                            link="https://compendiumofghara.herokuapp.com"
                             description="PostgreSQL database with custom UI web portal"
                             tools1="Node.js"
                             tools2="Express"
@@ -163,7 +163,7 @@ class Education extends Component {
 
                 <a className="res-bold-ul">Honors</a><br></br><br></br>
                 <a className="res-bold">Phi Kappa Phi Honors Fraternity, Macomb, IL</a><br></br>
-                <a className="res">Phi Kappa Phi is an honors fraternity that invites the top ten percent of a senior class body to become inductees</a><br></br>
+                <a className="res">Phi Kappa Phi is an honors fraternity consisting of the top ten percent of students</a><br></br>
             </div>
         )
     }

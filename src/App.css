@@ -26,7 +26,7 @@ html {
   top: 50%;
   margin-top: -200px;
   left: 50%;
-  margin-left: -305px;
+  margin-left: -225px;
   z-index: 3;
   font-family: 'Cormorant';
   color: white;
@@ -120,22 +120,6 @@ html {
   text-align: center;
 }
 
-.res-bold-ul {
-  
-}
-
-.res-bold {
-
-}
-
-.res-ital {
-
-}
-
-.res {
-
-}
-
 .description {
   font-size: 15px;
   width: 180px;
@@ -143,13 +127,18 @@ html {
   padding: 8px;
 }
 
-.work-wrapper {
+#work-wrapper {
   display: flex;
   justify-content: center;
   position: absolute;
   z-index: 2;
   top: 30%;
+  left: -100%;
   width: 100%;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.2s;
 }
 
 .work-container {
@@ -168,6 +157,14 @@ html {
   max-width: 225px;
   min-height: 120px;
   box-shadow: 6px 6px 8px black;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
 }
 
 .github-link-container {
